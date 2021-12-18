@@ -11,7 +11,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myorders/${user?.email}`)
+        fetch(`https://sleepy-scrubland-93051.herokuapp.com/myorders/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
 
@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Cancel Your Order ! Are you sure?');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+            fetch(`https://sleepy-scrubland-93051.herokuapp.com/deleteOrders/${id}`, {
                 method: "DELETE",
                 headers: { "content-type": "application/json" },
             })

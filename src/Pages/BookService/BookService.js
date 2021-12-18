@@ -15,7 +15,7 @@ const BookService = () => {
     const [service, setService] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://sleepy-scrubland-93051.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
@@ -28,7 +28,7 @@ const BookService = () => {
             status: 'pending'
         };
         console.log(bookingInfo);
-        axios.post('http://localhost:5000/order', bookingInfo)
+        axios.post('https://sleepy-scrubland-93051.herokuapp.com/order', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Order Successful. Visit My Orders On Dashboard For Update.');

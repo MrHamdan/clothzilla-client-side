@@ -11,7 +11,7 @@ const ManageAllOrders = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://sleepy-scrubland-93051.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [isDeleted, isUpdated])
@@ -22,7 +22,7 @@ const ManageAllOrders = () => {
         console.log(id, 'deleted');
         const proceed = window.confirm('Are you sure you want to cancle this user order?');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+            fetch(`https://sleepy-scrubland-93051.herokuapp.com/deleteOrders/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
@@ -43,7 +43,7 @@ const ManageAllOrders = () => {
         const updatedStatus = {
             status: 'Shipped'
         }
-        axios.put(`http://localhost:5000/orders/${id}`, {
+        axios.put(`https://sleepy-scrubland-93051.herokuapp.com/orders/${id}`, {
             status: 'Shipped'
         })
             .then(res => {

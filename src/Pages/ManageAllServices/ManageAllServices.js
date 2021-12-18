@@ -8,7 +8,7 @@ const ManageAllServices = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://sleepy-scrubland-93051.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [isDeleted])
@@ -18,7 +18,7 @@ const ManageAllServices = () => {
         console.log(id, 'deleted');
         const proceed = window.confirm('Are you sure you want to cancle this user order?');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteServices/${id}`, {
+            fetch(`https://sleepy-scrubland-93051.herokuapp.com/deleteServices/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())

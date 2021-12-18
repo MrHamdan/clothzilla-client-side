@@ -7,7 +7,7 @@ const AddANewService = () => {
     const onSubmit = data => {
         const proceed = window.confirm('Do You Want To Add This New Car ?');
         if (proceed) {
-            fetch("http://localhost:5000/addService", {
+            fetch("https://sleepy-scrubland-93051.herokuapp.com/addService", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)

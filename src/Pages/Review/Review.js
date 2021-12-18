@@ -8,7 +8,7 @@ const Review = () => {
     const onSubmit = data => {
         const proceed = window.confirm('Do You Want To Add Your Review ?');
         if (proceed) {
-            fetch("http://localhost:5000/addReview", {
+            fetch("https://sleepy-scrubland-93051.herokuapp.com/addReview", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
