@@ -1,0 +1,47 @@
+
+.custom-bg {
+    background-image: url('../../images/slide-1-1920x800.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* .custom-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+} */
+
+.text-color-h5{
+    color: #767679;
+}
+
+
+.text-style{
+    font-size:40px;
+    color:#767679;
+    font-weight: bold;
+}
+
+
+.text-design{
+    font-size:40px;
+    color:#7abd78;
+    font-weight: bold;
+    filter: drop-shadow(0px 1px 1px #575757);
+}
+

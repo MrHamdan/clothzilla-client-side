@@ -1,0 +1,36 @@
+.logo{
+    width: 50px;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+
+}
+
+.car-text{
+    color:#689832;
+    font-size:20px;
+    font-weight:bold;
+}
+.dealer-text{
+    color:#9D9DA0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+.login-btn-color{
+    color:white;
+    background-color:#689832;
+}
+
+.logout-btn-color{
+    color:white;
+    background-color:#689832;
+}
+
+.link-color:hover{
+    color:white;
+    background-color:#689832;
+    transition: 0.5s;
+}

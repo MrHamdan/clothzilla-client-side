@@ -1,0 +1,17 @@
+.form-bg{
+    background-color:white;
+    padding:50px;
+}
+.form-design{
+    background-color:white;
+    border-radius: 20px;
+    padding:30px;
+}
+
+.text-design4{
+    font-size:35px;
+    color:green;
+}
+.form-control {
+    background: #ffffff;
+}

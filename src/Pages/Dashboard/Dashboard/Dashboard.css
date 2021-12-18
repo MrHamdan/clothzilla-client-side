@@ -1,0 +1,20 @@
+.link-color2{
+    background-color: black;
+}
+
+.link-color2:hover{
+    background-color: #997143;
+}
+
+.text-color1{
+    color: #7ABD78;
+    font-size:30px;
+}
+.text-color2{
+    color: #9D9DA0;
+    font-size:30px;
+}
+
+.button-design:hover{
+    background-color: #4D6E1B !important;
+}
