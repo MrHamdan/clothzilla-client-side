@@ -15,7 +15,7 @@ const AddANewService = () => {
                 .then(res => res.json())
                 .then(res => {
                     if (res.insertedId) {
-                        alert('New Car Has Been Added!');
+                        alert('New Cloth Has Been Added!');
                         reset();
                     }
                 })
@@ -25,7 +25,7 @@ const AddANewService = () => {
     return (
         <div className="container border-4 rounded-3xl">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <h1 className="py-4 text-design">Add A New CAR</h1>
+                <h1 className="py-4 text-design">Add A New Cloth</h1>
                 <input
                     {...register("title")}
                     placeholder="Title"
