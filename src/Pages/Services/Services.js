@@ -20,7 +20,7 @@ const Services = () => {
     return (
         <div>
             <Header></Header>
-            <h1 className="text-design">Explore more cars and find your best deals</h1>
+            <h1 className="text-design">Explore more clothes and find your best deals</h1>
             {services.length === 0 ?
                 <Spinner animation="border" variant="success" />
                 :

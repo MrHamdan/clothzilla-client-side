@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className="container mt-5">
                 <div className="text-center">
-                    <h1 id="cars" className="text-design3">Our Clothes Collections And Special Deals </h1>
+                    <h1 id="clothes" className="text-design3">Our Clothes Collections And Special Deals </h1>
                     <h5 className="text-color-h5 fw-bold">We have so many different variants of new trending clothes collections in our showroom that you are most welcome to come and visit us and watch our cloth collections.We also have regular clothes which is very reasonable in price that you can purchase.We provide best prices available for our customers because your happiness is our happiness.</h5>
                 </div>
                 {services.length === 0 ?
