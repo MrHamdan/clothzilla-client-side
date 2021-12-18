@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 const MyOrders = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
-
+    const [path, setPath] = useState("");
     const [isDelete, setDelete] = useState(false);
 
 
@@ -67,6 +67,7 @@ const MyOrders = () => {
                                                 <p>Address: {order.address}</p>
                                                 <h5>Status: {order.status}</h5>
                                             </div>
+
                                             <div className="card-footer">
                                                 <Button onClick={() => handleDelete(order._id)} className="btn btn-danger my-1"><i className="fas fa-ban"></i> Cancle Order</Button>
                                             </div>
