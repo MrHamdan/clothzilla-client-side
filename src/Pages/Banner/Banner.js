@@ -53,7 +53,7 @@ const Banner = () => {
                 </Carousel>
             </div>
             <div>
-                <div className="container mt-5">
+                <div className="container mt-5 mb-5">
                     <h1 className="text-design mt-5">Exclusive Deals</h1>
                     <h5 className="text-color-h5 fw-bold">We have some exclusive deals available. Becoming a member can get you an exclusive deal which is pretty amazing. 20% discount on your first purchase and we have more amazing gifts for you </h5>
                 </div>
@@ -78,7 +78,7 @@ const Banner = () => {
                                     Save up to 30% on your next cloth purchase with our exclusive cloth deals and offers. Get your clothes today!
                                 </Typography>
                                 <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 15, fontWeight: 300 }}>
-                                    <span className="text-color-h5 fw-bold">Many cloth deals and offers are exclusive to our members. Sign up today to get your exclusive cloth deals and offers. Get in touch with us!</span>
+                                    <span className="text-color-h5 fw-bold">Many cloth deals and offers are exclusive to our members. <br /> Sign up today to get your exclusive cloth deals and offers. Get in touch with us!</span>
                                 </Typography>
                                 <Button variant="success">Learn More</Button>
                             </Box>
